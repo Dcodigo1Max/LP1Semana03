@@ -18,6 +18,12 @@ namespace RightSize
                  Console.WriteLine(args);
                 }
                 
+                if (w.Length>=8)
+                {
+                    Console.Write("[EARLY STOP]");
+                    break;
+                }
+
                 else
                 {
                     break;
