@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 
 namespace RightSize
 {
@@ -8,26 +9,27 @@ namespace RightSize
         private static void Main(string[] args)
         {
             
-            
+           
 
             foreach (string w in args)
             {
+
+                int t = w.Length;
                 
-                if (w.Length>3)
-                {
-                 Console.WriteLine(args);
-                }
                 
-                if (w.Length>=8)
+                
+                if (t>=8)
                 {
                     Console.Write("[EARLY STOP]");
                     break;
                 }
 
-                else
+                if (t>3)
                 {
-                    break;
+                 Console.WriteLine(w);
                 }
+            
+                
                 
                 
             } 
