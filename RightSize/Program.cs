@@ -8,14 +8,14 @@ namespace RightSize
         private static void Main(string[] args)
         {
             
-            string word = Console.ReadLine();
+            
 
-            foreach (string w in word)
+            foreach (string w in args)
             {
                 
-                if (w.Length in words>3)
+                if (w.Length>3)
                 {
-                 Console.WriteLine(word);
+                 Console.WriteLine(args);
                 }
                 
                 else
