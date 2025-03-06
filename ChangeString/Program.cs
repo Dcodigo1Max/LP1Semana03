@@ -12,20 +12,17 @@ namespace ChangeString
             string f = Console.ReadLine();
 
             Console.WriteLine("Escreva uma letra: ");
-            string l = Console.ReadLine();
-            Convert.ToChar(l);
+            char c = Console.ReadKey().KeyChar;
+            Console.WriteLine();
             
+            string f2 = f.Replace(c, 'x');
 
 
-            foreach (char c in  f)
-            {
-                if ( l == "") 
-                {
-                    Console.WriteLine("x");
-                }
-                Console.WriteLine(f);
-                break;
-            }
+            Console.WriteLine($"= {f2}");
+
+
+
+           
 
            
             
